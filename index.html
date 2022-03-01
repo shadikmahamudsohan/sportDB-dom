@@ -6,10 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportDB</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 w-100 mx-auto">
+                <h2>Left side</h2>
+                <div class="input-group">
+                    <input id="search-box" type="search" class="form-control" placeholder="Search anything...">
+                    <button onclick="allPlayers()" id="search-btn" type="button" class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <img id="spinner" src="images/spinner.gif" alt="">
 
+                <div id="player-container">
+
+                </div>
+            </div>
+
+            <div class="col-sm-6  w-100 mx-auto">
+                <h2>right side</h2>
+                <div class="img-container">
+                    <img class="w-75" id="female" src="images/female-team.jpg" alt="">
+                    <img class="w-75" id="male" src="images/male-team.jpg" alt="">
+                </div>
+                <div class="container" id="details-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add script -->
+    <script src="app.js"></script>
 </body>
 
 </html>

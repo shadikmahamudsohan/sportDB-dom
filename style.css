@@ -1,0 +1,25 @@
+#male {
+    display: none;
+}
+
+#female {
+    display: none;
+}
+
+#player-container {
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+#spinner {
+    display: none;
+}
